@@ -1,0 +1,7 @@
+<div class="card-container">
+  <h1>AIHR Courses</h1>
+  <div *ngFor="let course of courses" #courseCards (click)="manageSelectedCourses(course)"
+    [ngClass]="course.selected ? 'selectedCard' : 'defaultCard'">
+    <p>{{ course.name }} ({{ course.hours }} hours)</p>
+  </div>
+</div>

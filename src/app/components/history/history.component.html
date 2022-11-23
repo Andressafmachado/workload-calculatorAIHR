@@ -1,0 +1,69 @@
+<div>
+  <div>
+    <form #calculatorForm="ngForm" (ngSubmit)="onSubmit(calculatorForm.value)">
+      <div>
+        <p>choose the dates to start your study plan:</p>
+        <div class="mb-3">
+          <label class="form-label">Start Date</label>
+          <input type="date" class="form-control" name="startDate" ngModel />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">End Date</label>
+          <input type="date" class="form-control" name="endDate" ngModel />
+        </div>
+        <div>
+          <button type="button" class="btn btn-primary" type="submit">
+            calculate
+          </button>
+        </div>
+      </div>
+    </form>
+    <div [hidden]="!hoursPerWeek">
+      <h2>results</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Your current plan:</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <p>total hours {{ totalHours }}</p>
+              <p>weeks {{ weeks }}</p>
+              <p>hours per week {{ hoursPerWeek }}</p>
+              <a href="https://www.aihr.com/courses/" target='_blank'>
+              <button type="button" class="btn btn-primary e-link">start my future</button>
+             </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div>
+    <h2>history</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Created at</th>
+          <th scope="col">Selected Courses</th>
+          <th scope="col">Start Date</th>
+          <th scope="col">End Date</th>
+          <th scope="col">Total Hours</th>
+          <th scope="col">Hours per week</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let h of history">
+          <td>{{ h.created | date:'shortDate' }}</td>
+          <td>{{ h.selectedCourses }}</td>
+          <td>{{ h.startDate | date:'shortDate' }}</td>
+          <td>{{ h.endDate | date:'shortDate' }}</td>
+          <td>{{ h.totalHours }}</td>
+          <td>{{ h.hoursPerWeek }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

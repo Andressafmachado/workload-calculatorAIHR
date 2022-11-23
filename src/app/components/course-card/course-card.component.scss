@@ -1,0 +1,47 @@
+.selectedCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 16px;
+  all: unset;
+  border-radius: 4px;
+  border: 1px solid #eee;
+  background-color: #0babc7;
+  height: 40px;
+  width: 200px;
+  margin: 0 8px 16px;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  line-height: 24px;
+  height: 75px;
+  width: 450px;
+  margin-right: 0;
+}
+
+.defaultCard {
+  background-color: #0babc75e;
+  display: block;
+  justify-content: center;
+  margin-top: 16px;
+  border-radius: 4px;
+  border: 1px solid #eee;
+  height: 60px;
+  width: 250px;
+  margin: 0 8px 16px;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 24px;
+  height: 75px;
+  width: 450px;
+  margin-right: 0;
+}
+
+h1 {
+  padding-top: 16px;
+  padding-left: 16px;
+}
