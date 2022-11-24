@@ -8,7 +8,7 @@ open: https://localhost:4200/
 
 The calculator was build in Angular to work with API available here: https://github.com/Andressafmachado/CoursesApiAIHR.
 
-#Concerns
+# Concerns
 this project is a POC,
 
 improvements before MVP:
