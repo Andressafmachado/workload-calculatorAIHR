@@ -1,6 +1,8 @@
 # WorkloadCalculatorAIHR
 
-to run: ng serve
+to run: 
+- npm install
+- ng serve
 
 open: https://localhost:4200/
 
