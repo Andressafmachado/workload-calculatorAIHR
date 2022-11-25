@@ -17,5 +17,8 @@ improvements before MVP:
 - increase test coverage, 
 - move the calculation to the backend
 
-(sometimes Chrome can give you a hard time opening localhost: disable chrome extensions/developer mode)
+# config for running locally:
+if necessary:
+- enable "Allow invalid certificates for resources loaded from localhost." at chrome://flags/#allow-insecure-localhost
+- disable chrome extensions/developer mode
 
